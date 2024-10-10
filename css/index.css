@@ -1,5 +1,5 @@
 .boxTarefas {
-  background-color: white;
+  background-color: #FFFFFF;
   width: 1140px;
   flex-wrap: wrap;
   display: flex;
@@ -28,7 +28,7 @@
 }
 
 .boxIcones {
-  background-color: white;
+  background-color: #FFFFFF;
   width: 1140px;
   flex-wrap: wrap;
   display: flex;
@@ -95,5 +95,27 @@
   font-size: 20px; 
   color: white;
 }
-
+.boxIconeProcurar{
+  height: 30px;
+  width: 30px;
+  padding: 3px;
+  background-color:#ffa500;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  border-radius: 5px;
+  cursor: pointer; /* Faz o mouse mudar quando passa por cima*/
+  transition: background-color 0.3s; /* Suaviza a transição de cor */
+}
+/* Aplica o estilo quando passa o mouse por cima */
+.boxIconeProcurar:hover {
+  background-color: #ff8c00;;
+}
+.iconeProcurar {
+  font-size: 20px; 
+  color: white;
+}
+body {
+  background-color: #FFFFFF;
+}
  

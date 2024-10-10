@@ -28,6 +28,7 @@
         function vaiParaCadastro() {
           window.location.href = "http://localhost/sistema_cadastro_tarefas_PW2/formCadastro.php";
         }
+
       </script>';
   };
   function exibirIcones() {
@@ -38,6 +39,9 @@
         </div>
         <div class="boxIconeDelete">
           <i class="fa-solid fa-trash iconeDelete"></i>
+        </div>
+        <div class="boxIconeProcurar">
+          <i class="fa-solid fa-magnifying-glass iconeProcurar"></i>
         </div>
       </div>';
   }
