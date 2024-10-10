@@ -1,0 +1,22 @@
+form {
+  display: grid;
+  margin-right: 40%;
+  margin-left: 40%;
+  text-align: center;
+  align-items: center;
+  margin-bottom: 50%;
+
+}
+
+label {
+  margin-top: 10%;
+}
+
+#btn {
+  /* position: absolute; */
+  margin-right: 35% ;
+  margin-top: 5%;
+  text-align: center;
+  margin-left: 40%;
+  align-items: end;
+}  
