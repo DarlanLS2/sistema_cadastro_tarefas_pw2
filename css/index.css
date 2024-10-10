@@ -1,0 +1,99 @@
+.boxTarefas {
+  background-color: white;
+  width: 1140px;
+  flex-wrap: wrap;
+  display: flex;
+  gap: 10px;
+  justify-content: flex-start;
+  padding: 10px;
+  margin: auto; 
+}
+.tarefa {
+  background-color: #47b1db;
+  max-width: 200px;
+  min-height: auto; 
+  border-radius: 5px;
+  padding-inline: 10px;
+  flex: 1 1 auto; /* Permite que as divs cresçam de forma igual */
+}
+.infoTarefa {
+  color: white;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  word-wrap: break-word;
+}
+.iconeGrandeMais {
+  font-size: 50px;
+  color: white;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.boxIcones {
+  background-color: white;
+  width: 1140px;
+  flex-wrap: wrap;
+  display: flex;
+  gap: 10px;
+  justify-content: flex-start;
+  margin: auto; 
+}
+.botaoCadastro {
+  background-color: #47b1db;
+  max-width: 200px;
+  min-height: 250px; 
+  border-radius: 5px;
+  padding-inline: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1 1 auto; /* Permite que as divs cresçam de forma igual */
+  cursor: pointer; /* Faz o mouse mudar quando passa por cima*/
+  transition: background-color 0.3s; /* Suaviza a transição de cor */
+}
+/* Aplica o estilo quando passa o mouse por cima */
+.botaoCadastro:hover {
+  background-color: #0099cc;
+}
+
+.boxIconePincel{
+  height: 30px;
+  width: 30px;
+  padding: 3px;
+  background-color: #32cd32;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  border-radius: 5px;
+  cursor: pointer; /* Faz o mouse mudar quando passa por cima*/
+  transition: background-color 0.3s; /* Suaviza a transição de cor */
+}
+/* Aplica o estilo quando passa o mouse por cima */
+.boxIconePincel:hover {
+  background-color: #28a745;
+}
+.iconeDePincel {
+  font-size: 25px; 
+  color: white; 
+}
+
+.boxIconeDelete{
+  height: 30px;
+  width: 30px;
+  padding: 3px;
+  background-color: #ff6347;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  border-radius: 5px;
+  cursor: pointer; /* Faz o mouse mudar quando passa por cima*/
+  transition: background-color 0.3s; /* Suaviza a transição de cor */
+}
+/* Aplica o estilo quando passa o mouse por cima */
+.boxIconeDelete:hover {
+  background-color: #cc0000;
+}
+.iconeDelete {
+  font-size: 20px; 
+  color: white;
+}
+
+ 

@@ -1,0 +1,12 @@
+CREATE DATABASE gerenciador;
+USE gerenciador;
+CREATE TABLE `tarefas` (
+  `id` int(11) AUTO_INCREMENT PRIMARY KEY,
+  `nome_evento` varchar(255) NOT NULL,
+  `data_evento` date NOT NULL,
+  `hora_inicio` time NOT NULL,
+  `hora_fim` time NOT NULL,
+  `descricao_evento` text NOT NULL,
+  `local_evento` varchar(100) NOT NULL,
+  `responsavel_evento` varchar(100) NOT NULL
+)

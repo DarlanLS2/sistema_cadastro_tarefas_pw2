@@ -19,4 +19,5 @@ label {
   text-align: center;
   margin-left: 40%;
   align-items: end;
+  cursor: pointer;  
 }  
