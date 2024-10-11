@@ -22,25 +22,33 @@
         <p class="iconeGrandeMais"><b>+</b></p>
       </div>';
   };
-  function criarFuncaoVaiParaCadastro() {
+  function criarFuncoesDeRedirecionamento() {
     echo '
       <script>
         function vaiParaCadastro() {
           window.location.href = "http://localhost/sistema_cadastro_tarefas_PW2/formCadastro.php";
         }
-
+        function vaiParaUpdate() {
+          window.location.href = "http://localhost/sistema_cadastro_tarefas_PW2/formUpdate.php";
+        }
+        function vaiParaDelete() {
+          window.location.href = "http://localhost/sistema_cadastro_tarefas_PW2/formDelete.php";
+        }
+        function vaiParaProcurar() {
+          window.location.href = "http://localhost/sistema_cadastro_tarefas_PW2/formProcurar.php";
+        }
       </script>';
   };
   function exibirIcones() {
     echo 
       '<div class="boxIcones">
-        <div class="boxIconePincel">
+        <div class="boxIconePincel" onclick="vaiParaUpdate()">
           <i class="fa-solid fa-wrench iconeDePincel"></i>
         </div>
-        <div class="boxIconeDelete">
+        <div class="boxIconeDelete" onclick="vaiParaDelete()">
           <i class="fa-solid fa-trash iconeDelete"></i>
         </div>
-        <div class="boxIconeProcurar">
+        <div class="boxIconeProcurar" onclick="vaiParaProcurar()">
           <i class="fa-solid fa-magnifying-glass iconeProcurar"></i>
         </div>
       </div>';

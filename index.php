@@ -19,7 +19,7 @@
   </div>
   <?php
     exibirIcones();
-    criarFuncaoVaiParaCadastro();
+    criarFuncoesDeRedirecionamento();
   ?>
 </body>
 
