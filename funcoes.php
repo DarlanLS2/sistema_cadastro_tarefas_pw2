@@ -115,4 +115,47 @@
         }, 500);
       </script>"; 
   }
+  
+  function exibirFormularioUpdate($id) {
+    $conexao = mysqli_connect("localhost" ,"root", "", "gerenciador");
+    $retornoQuery = mysqli_query($conexao, "SELECT * FROM tarefas WHERE id='$id'");
+    while ($escrever=mysqli_fetch_array($retornoQuery)) {  
+        $nomeEvento = $escrever["nome_evento"];
+        $dataEvento = $escrever["data_evento"];
+        $horaInicio = $escrever["hora_inicio"];
+        $horaFim = $escrever["hora_fim"];
+        $descEvento = $escrever["descricao_evento"];
+        $localEvento = $escrever["local_evento"];
+        $responsavelEvento = $escrever["responsavel_evento"];
+      echo 
+        '<form action="../validacoes/validarUpdate.php" method="post">
+            <label for="id">Id:</label>
+            <input type="text" name="id" value="' . htmlspecialchars($id) . '" redonly/>
+
+            <label for="nom_eve">Nome do Evento</label>
+            <input id="nom_eve" name="nom_eve" type="text" value="' . htmlspecialchars($nomeEvento) . '" required> 
+
+            <label for="dt_event">Data do Evento</label>
+            <input id="dt_event" name="dt_event" type="date" value="' . htmlspecialchars($dataEvento) . '" required> 
+
+            <label for="hr_ini">Hora de Início do Evento</label>
+            <input id="hr_ini" name="hr_ini" type="time" value="' . htmlspecialchars($horaInicio) . '" required> 
+
+            <label for="hr_fim">Hora de Fim do Evento</label>
+            <input id="hr_fim" name="hr_fim" type="time" value="' . htmlspecialchars($horaFim) . '" required> 
+
+            <label for="desc_eve">Descrição do Evento</label>
+            <input id="desc_eve" name="desc_eve" type="text" value="' . htmlspecialchars($descEvento) . '" required> 
+
+            <label for="loc_eve">Local do Evento</label>
+            <input id="loc_eve" name="loc_eve" type="text" value="' . htmlspecialchars($localEvento) . '" required> 
+
+            <label for="resp_eve">Responsável do Evento</label>
+            <input id="resp_eve" name="resp_eve" type="text" value="' . htmlspecialchars($responsavelEvento) . '" required> 
+
+            <input id="btn" type="submit" value="Atualizar">
+        </form>';
+  };
+  mysqli_close($conexao);
+  }
 ?>

@@ -6,6 +6,16 @@
     <title>Document</title>
 </head>
 <body>
-    <p>bateu aqui em</p>
+    <form action="" method="post">
+        <input type="number" name="id"/>
+        <input type="submit"/>
+    </form>
+    <?php
+        if ($_SERVER["REQUEST_METHOD"] == "POST") {
+            include "../funcoes.php";
+            $id = $_POST["id"];
+            exibirFormularioUpdate($id);
+        }
+    ?>
 </body>
 </html>
