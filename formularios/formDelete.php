@@ -6,7 +6,7 @@
     <title>Document</title>
 </head>
 <body>
-  <form action="validarExclusao.php" method="post">
+  <form action="../validacoes/validarExclusao.php" method="post">
     <input type="number" name="id"/>
     <input type="submit"/>
   </form>

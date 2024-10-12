@@ -50,16 +50,16 @@
     echo '
       <script>
         function vaiParaCadastro() {
-          window.location.href = "http://localhost/sistema_cadastro_tarefas_PW2/formCadastro.php";
+          window.location.href = "http://localhost/sistema_cadastro_tarefas_PW2/formularios/formCadastro.php";
         }
         function vaiParaUpdate() {
-          window.location.href = "http://localhost/sistema_cadastro_tarefas_PW2/formUpdate.php";
+          window.location.href = "http://localhost/sistema_cadastro_tarefas_PW2/formularios/formUpdate.php";
         }
         function vaiParaDelete() {
-          window.location.href = "http://localhost/sistema_cadastro_tarefas_PW2/formDelete.php";
+          window.location.href = "http://localhost/sistema_cadastro_tarefas_PW2/formularios/formDelete.php";
         }
         function vaiParaProcurar() {
-          window.location.href = "http://localhost/sistema_cadastro_tarefas_PW2/formProcurar.php";
+          window.location.href = "http://localhost/sistema_cadastro_tarefas_PW2/formularios/formProcurar.php";
         }
       </script>';
   };

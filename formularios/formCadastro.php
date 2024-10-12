@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/formCadastro.css">
+    <link rel="stylesheet" href="../css/formCadastro.css">
     <title>Document</title>
 </head>
 <body>
-    <form action="validarCadastro.php" method="POST">
+    <form action="../validacoes/validarCadastro.php" method="POST">
         <label for="nom_eve">Nome do Evento</label>
         <input id="nom_eve" name="nom_eve" type="text" required> 
    

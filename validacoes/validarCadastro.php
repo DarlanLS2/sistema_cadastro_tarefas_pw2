@@ -6,11 +6,11 @@
   <title>Document</title>
 </head>
 <body>
-    <h1>Exclusão bem sucedida!!!</h1>
-    <?php
-      include "./funcoes.php";
-      validarExclusao();
-      retornarAoInicio();
-    ?>
+  <h1>Cadastro realizado!!!</h1>
+  <?php
+    include "../funcoes.php";
+    validarCadastro();
+    retornarAoInicio();
+  ?>
 </body>
 </html>
