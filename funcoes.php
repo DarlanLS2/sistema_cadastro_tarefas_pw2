@@ -65,7 +65,7 @@
       '<h2>Informações do Evento:</h2>
       <form action="../validacoes/validarUpdate.php" method="post">
       <label for="id">Id:</label>
-      <input type="text" name="id" value="' . htmlspecialchars($id) . '" disabled/><br>
+      <input type="text" name="id" value="' . htmlspecialchars($id) . '" redonly/><br>
       
       <label for="nom_eve">Nome do Evento</label>
       <input id="nom_eve" name="nom_eve" type="text" value="' . htmlspecialchars($nomeEvento) . '" required><br> 
