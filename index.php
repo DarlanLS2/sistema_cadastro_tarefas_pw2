@@ -10,6 +10,7 @@
 </head>
 
 <body>
+  <h1>Eventos:</h1>
   <div class="boxTarefas">
     <?php
       include "./funcoes.php"; // Importa as funções
@@ -17,6 +18,7 @@
       exibirBotaoCadastro();
     ?>
   </div>
+  
   <?php
     exibirIcones();
     criarFuncoesDeRedirecionamento();

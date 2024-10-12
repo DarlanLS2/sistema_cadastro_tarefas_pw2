@@ -6,7 +6,9 @@
     <title>Document</title>
 </head>
 <body>
+  <h1>Excluir Evento</h1>
   <form action="../validacoes/validarExclusao.php" method="post">
+    <label for="id">Digite o id do Evento que deseja excluir:</label>
     <input type="number" name="id"/>
     <input type="submit"/>
   </form>

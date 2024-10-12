@@ -6,9 +6,11 @@
     <title>Document</title>
 </head>
 <body>
+    <h1>Atualizar Evento</h1>
     <form action="" method="post">
+        <label for="id">Digite o id do Evento que deseja atualizar:</label>
         <input type="number" name="id"/>
-        <input type="submit"/>
+        <input type="submit" value="enviar"/>
     </form>
     <?php
         if ($_SERVER["REQUEST_METHOD"] == "POST") {

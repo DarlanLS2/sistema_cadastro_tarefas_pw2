@@ -7,7 +7,9 @@
     <title>Document</title>
 </head>
 <body>
+    <h1>Consultar Evento</h1>
     <form action="" method="post">
+        <label for="id">Digite o id do Evento que deseja consultar:</label>
         <input type="number" name="id"/>
         <input type="submit"/>
     </form>
