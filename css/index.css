@@ -10,6 +10,7 @@
 }
 .tarefa {
   background-color: #47b1db;
+  min-width: 200px;
   max-width: 200px;
   min-height: auto; 
   border-radius: 5px;

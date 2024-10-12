@@ -22,5 +22,4 @@
     criarFuncoesDeRedirecionamento();
   ?>
 </body>
-
 </html>
