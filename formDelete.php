@@ -6,8 +6,9 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="" method="POST";>
-        
-    </form>
+  <form action="validarExclusao.php" method="post">
+    <input type="number" name="id"/>
+    <input type="submit"/>
+  </form>
 </body>
 </html>

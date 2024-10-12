@@ -98,12 +98,21 @@
     }
   }
 
+  function validarExclusao() {
+    if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+      $id = $_POST["id"];
+      $conexao = mysqli_connect("localhost" ,"root", "", "gerenciador");
+      $input = mysqli_query($conexao, "DELETE FROM tarefas WHERE id='$id'");
+      mysqli_close($conexao);
+    };
+  }
+
   function retornarAoInicio() {
     echo 
       "<script>
         setTimeout(function() {
           window.location.href = \"http://localhost/sistema_cadastro_tarefas_PW2/index.php\";
-        }, 1000);
+        }, 500);
       </script>"; 
   }
 ?>
